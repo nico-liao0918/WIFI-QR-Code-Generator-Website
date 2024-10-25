@@ -8,8 +8,14 @@ const qrCodeContainer = document.getElementById('qrcode');
 
 // Function to generate the QR code
 function generateQRCode() {
-    const networkName = networkNameInput.value;
-    const password = passwordInput.value;
+    const networkName = networkNameInput.value.trim();
+    const password = passwordInput.value.trim();
+
+    // Validate inputs
+    if (!networkName || !password) {
+        alert("Please fill in both fields.");
+        return;
+    }
 
     // WiFi format for QR code
     const wifiQRData = `WIFI:S:${networkName};T:WPA;P:${password};;`;
@@ -23,6 +29,13 @@ function generateQRCode() {
         width: 128,
         height: 128
     });
+
+    // Optionally clear inputs after generation
+    networkNameInput.value = '';
+    passwordInput.value = '';
+
+    // Provide feedback to the user
+    alert("QR Code generated successfully!");
 }
 
 // Event listener for the button

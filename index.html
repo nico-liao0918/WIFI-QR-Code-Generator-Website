@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>WiFi Card Generator</title>
+        <title>WCG Website</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div class="card-generator">
-            <h1>WiFi Card Generator</h1>
-            <form id="wifiForm">
-                <label for="networkName">Network name</label>
-                <input type="text" id="networkName" placeholder="WiFi network name" required>
-                <label for="password">Password</label>
-                <input type="text" id="password" placeholder="Password" required>
-                <div id="qrcode"></div> <!-- Where the QR code will appear -->
-                <button type="button" id="generateBtn">Generate WiFi Card</button>
-            </form>
-        </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-        <script src="script.js"></script>
+        <main>
+            <section class="card-generator">
+                <h2>Generate your QR Code</h2>
+                <div>
+                    <form id="wifiForm">
+                        <label for="networkName">Network name</label>
+                        <input type="text" id="networkName" placeholder="WiFi network name" required>
+                        <label for="password">Password</label>
+                        <input type="text" id="password" placeholder="Password" required>
+                        <div id="qrcode"></div>
+                        <button type="button" id="generateBtn" class="btn">Generate WiFi Card</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+            <script src="script.js"></script>
     </body>
 </html>
