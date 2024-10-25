@@ -36,3 +36,29 @@ button {
 button:hover {
     background-color: #218838;
 }
+
+.link {
+    display: block;
+    text-decoration: none;
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    text-emphasis: none;
+}
+
+.link a {
+    text-decoration: none;
+}
+
+.btn {
+    display: block;
+    text-decoration: none;
+    background-color: #28a745;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
