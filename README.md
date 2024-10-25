@@ -11,7 +11,7 @@ User-friendly design with basic validation for input fields.
 ## Demo
 You can use the application directly by opening the index.html file in a web browser. Enter the WiFi network name and password, and click "Generate WiFi Card" to see the QR code.
 
-You may also access it via GitHub Pages [here]() (link will be provided once finished).
+You may also access it via GitHub Pages [here](https://nico-liao0918.github.io/WIFI-QR-Code-Generator-Website/).
 
 ## Technologies Used
 HTML: For the structure of the web page.
